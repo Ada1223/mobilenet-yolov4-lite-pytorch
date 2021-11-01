@@ -3,7 +3,7 @@ import math
 import torch
 import torch.nn as nn
 
-
+#保证输出的数可以整除divisor（除数）
 def _make_divisible(v, divisor, min_value=None):
     if min_value is None:
         min_value = divisor
